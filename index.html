@@ -1,0 +1,57 @@
+<!-- HELIX STUDIO KARTS CHAMPIONSHIP -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helix Studio Karts Championship</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Helix Studio Logo" class="logo">
+            <h1>KARTS CHAMPIONSHIP</h1>
+            <p class="subtitle">Inscripciones Abiertas y Clasificación en Directo</p>
+        </header>
+
+        <main>
+            <section class="card registration-section">
+                <h2>¡Inscríbete Ahora!</h2>
+                <form id="registration-form" class="form-grid">
+                    <div class="form-group">
+                        <label for="char-name">Tu Nombre de Piloto:</label>
+                        <input type="text" id="char-name" required placeholder="Nombre in-game">
+                    </div>
+                    <div class="form-group">
+                        <label for="race-assign-select">Elige tu Carrera:</label>
+                        <select id="race-assign-select">
+                        </select>
+                    </div>
+                    <button type="submit" class="full-width">¡Quiero Correr!</button>
+                </form>
+                <p id="registration-feedback" class="feedback-message"></p>
+            </section>
+
+            <div id="live-update-notice" class="hidden">La tabla se está actualizando...</div>
+            <div id="races-container" class="races-grid">
+            </div>
+
+            <section class="card winners-summary">
+                <h2>🏆 Ganadores Clasificados 🏆</h2>
+                <ul id="final-winners-list">
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Helix Studio Roleplay &copy; 2025</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
